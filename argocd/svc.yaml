@@ -10,3 +10,4 @@ spec:
     - protocol: TCP
       port: 80  # The port exposed within the cluster
       targetPort: 80  # The port on which the container is running
+  type: LoadBalancer  # Change to LoadBalancer or NodePort if external access is required
