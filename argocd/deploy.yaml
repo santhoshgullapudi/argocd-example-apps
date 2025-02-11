@@ -13,6 +13,8 @@ spec:
       labels:
         app: my-app
     spec:
+      imagePullSecrets:
+        - name: regcred  # Referencing the secret here
       containers:
         - name: my-app-container
           image: 684206014294.dkr.ecr.us-east-1.amazonaws.com/argocd:latest
