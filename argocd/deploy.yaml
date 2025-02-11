@@ -17,7 +17,7 @@ spec:
       #   - name: regcred
       containers:
         - name: my-app-container
-          image: 684206014294.dkr.ecr.us-east-1.amazonaws.com/argocd:nginx-latest
+          image: 684206014294.dkr.ecr.us-east-1.amazonaws.com/test:httpd-latest
           ports:
             - containerPort: 80
-          # imagePullPolicy: Always
+          imagePullPolicy: Always
